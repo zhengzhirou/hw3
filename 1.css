@@ -1,0 +1,96 @@
+
+h1{
+    color: rgb(23, 21, 76);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: -140px;
+}
+.box{
+    position: relative;
+    top: -130px;
+}
+ul{
+    list-style-type: none;/*除小圆点*/
+    width:auto;
+    height: 50px;
+    margin: 0px;
+    padding-left: 30%;/*左边距，让li看起来像在中间*/
+    background-color: rgb(62, 138, 209);
+    text-align: center;
+}
+.box li{
+    float: left;
+    width: 130px;
+    height: 100%;
+    padding: 0px;
+    margin-right: 1%;/*两个li之间的距离*/
+}
+a:link,a:visited{/*鼠标点过和未点过的样式*/
+    display: block;
+    color: rgb(11, 10, 37);
+    background-color: rgb(62, 138, 209);
+    text-align: center;
+    line-height: 30px;/*li行高*/
+    padding-top: 10px;
+    text-decoration: none;/*去下划线*/
+}
+a:hover{
+        background-color: rgb(27, 102, 233);
+}
+div ul li ul{
+    /*二级菜单的整体设定*/
+    display: none;/*隐藏*/
+    width: auto;/*消除二级菜单的滚动条*/
+}
+ div ul li ul li{
+    /*消除浮动*/
+    background-color: rgb(62, 138, 209);
+    position: relative;
+    margin-left: -39px;
+    z-index: 10;
+}
+  div ul li:hover ul{
+    display: block;
+    float: left;
+}
+
+
+.box3 li a {
+    display: block;
+    float: none;
+  }
+  .box3 ul {
+    
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    background-color: rgb(62, 138, 209);
+    height: 100%; /* 全高 */
+    position: fixed; /* 使它产生粘性，即使在滚动时 */
+    overflow: auto; /* 如果侧栏的内容太多，则启用滚动条 */
+    top: 0px;
+  }
+  .active{
+    background-color: rgb(27, 102, 233);
+  }
+  .box2{
+    position: absolute;
+    top: 200px;
+    left:200px;
+    overflow: auto; /* 如果侧栏的内容太多，则启用滚动条 */
+  }
+  .box2 img{
+    position: relative;
+    z-index: -1;
+    width: 95%;
+  }
+
+#footer { 
+    text-align: center;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    height: 30px;/*脚部的高度*/ 
+    background: rgb(62, 138, 209); 
+    clear:both; }
